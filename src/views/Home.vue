@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { GetHomePageInfo } from "@/API";
+import { GetHomePageInfoAPI } from "@/API";
 export default {
   name: "Home",
   data() {
@@ -32,8 +32,9 @@ export default {
   },
   methods: {
     async getBannerList() {
-      let { data: res } = await GetHomePageInfo();
+      let { data: res } = await GetHomePageInfoAPI();
       this.bannerList = res.banner;
+      console.log(res);
     },
     goSearch() {
       this.$router.push("/home/searchpopup");
