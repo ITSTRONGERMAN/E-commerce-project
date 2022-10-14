@@ -8,6 +8,13 @@ const routes = [
     path: "/home",
     name: "home",
     component: Home,
+    children: [
+      {
+        path: "searchpopup",
+        name: "searchpopup",
+        component: () => import("@/views/SearchPopup"),
+      },
+    ],
   },
 ];
 export default routes;
