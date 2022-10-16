@@ -43,5 +43,8 @@ const router = new VueRouter({
   mode: "history",
   routes,
 });
-
+// 配置路由守卫
+router.beforeEach((to, from, next) => {
+  next()
+});
 export default router;

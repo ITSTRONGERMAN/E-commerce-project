@@ -4,9 +4,12 @@ import router from "./router";
 import store from "./store";
 import "@/assets/flexible";
 import "reset-css";
-import "@/VantUI";
+import "@/Tools/VantUI";
 
 Vue.config.productionTip = false;
+Vue.filter('RMBfilter',function(val){
+  return '￥'+val+'元'
+})
 new Vue({
   router,
   store,

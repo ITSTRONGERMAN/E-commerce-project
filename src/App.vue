@@ -1,11 +1,18 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <APPTabBar></APPTabBar>
   </div>
 </template>
 
 <script>
-export default {};
+import APPTabBar from "@/components/APPTabBar.vue";
+export default {
+  components: APPTabBar,
+  components: {
+    APPTabBar,
+  },
+};
 </script>
 
 <style>
