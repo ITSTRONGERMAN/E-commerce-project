@@ -13,3 +13,6 @@ export const GetGoodsListAPI = (params) =>
   request.get("/goods/list", { params });
 // 删除历史记录
 export const ClearHistoyAPI = () => request.post("/search/clearhistory");
+// 登录请求
+export const UserLoginApI = (params) =>
+  request.post("/auth/loginByWeb", params);

@@ -1,11 +1,19 @@
 import Vue from "vue";
 import {
+  Button,
   Cell,
+  Col,
   DropdownItem,
   DropdownMenu,
   Empty,
+  Field,
+  Form,
+  Grid,
+  GridItem,
   Icon,
   List,
+  Popup,
+  Row,
   Search,
   Swipe,
   SwipeItem,
@@ -27,3 +35,11 @@ Vue.use(Empty);
 Vue.use(Toast);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
+Vue.use(Col);
+Vue.use(Row);
+Vue.use(GridItem);
+Vue.use(Button);
+Vue.use(Grid);
+Vue.use(Popup);
+Vue.use(Form);
+Vue.use(Field);

@@ -45,6 +45,18 @@ const router = new VueRouter({
 });
 // 配置路由守卫
 router.beforeEach((to, from, next) => {
-  next()
+  let token = localStorage.getItem("token");
+  if (to.path == "/cart") {
+    if (token) {
+      next();
+    } else {
+      Vue.prototype.$toast.fail("请先登录");
+      setTimeout(() => {
+        next("/user");
+      }, 1000);
+    }
+  } else {
+    next();
+  }
 });
 export default router;
