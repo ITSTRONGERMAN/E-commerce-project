@@ -34,7 +34,6 @@ export default {
     async getBannerList() {
       let { data: res } = await GetHomePageInfoAPI();
       this.bannerList = res.banner;
-      console.log(res);
     },
     goSearch() {
       this.$router.push("/home/searchpopup");
