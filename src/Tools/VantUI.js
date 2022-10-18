@@ -21,6 +21,14 @@ import {
   TabbarItem,
   Tag,
   Toast,
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton,
+  Sku,
+  Card,
+  SubmitBar,
+  Checkbox,
+  CheckboxGroup,
 } from "vant";
 Vue.use(Search);
 Vue.use(Swipe);
@@ -43,3 +51,11 @@ Vue.use(Grid);
 Vue.use(Popup);
 Vue.use(Form);
 Vue.use(Field);
+Vue.use(GoodsAction);
+Vue.use(GoodsActionButton);
+Vue.use(GoodsActionIcon);
+Vue.use(Sku);
+Vue.use(Card);
+Vue.use(SubmitBar);
+Vue.use(Checkbox);
+Vue.use(CheckboxGroup);

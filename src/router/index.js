@@ -41,6 +41,10 @@ VueRouter.prototype.replace = function (location, resolve, reject) {
 };
 const router = new VueRouter({
   mode: "history",
+  //页面跳转显示在顶部
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  },
   routes,
 });
 // 配置路由守卫

@@ -7,9 +7,9 @@ import "reset-css";
 import "@/Tools/VantUI";
 
 Vue.config.productionTip = false;
-Vue.filter('RMBfilter',function(val){
-  return '￥'+val+'元'
-})
+Vue.filter("RMBfilter", function (val) {
+  return "￥" + Number(val).toFixed(2) + "元";
+});
 new Vue({
   router,
   store,

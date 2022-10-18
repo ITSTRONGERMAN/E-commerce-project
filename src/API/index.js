@@ -16,3 +16,20 @@ export const ClearHistoyAPI = () => request.post("/search/clearhistory");
 // 登录请求
 export const UserLoginApI = (params) =>
   request.post("/auth/loginByWeb", params);
+// 商品详情
+export const GetGoodsDetailAPI = (params) =>
+  request.get("/goods/detail", {
+    params,
+  });
+//商品详情相关产品
+export const GetRelativeGoodsAPI = (params) =>
+  request.get("/goods/related", { params });
+// 获取购物车数量
+export const GetCartCountAPI = () => request.get("/cart/goodscount");
+// 加入购物车
+export const AddCartAPI = (params) => request.post("/cart/add", params);
+// 获取购物车数据
+export const GetCartDataAPI = () => request.get("/cart/index");
+// 点击切换商品选中状态（含全选）
+export const ChangeCheckAllAPI = (params) =>
+  request.post("/cart/checked", params);

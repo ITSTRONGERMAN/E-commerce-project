@@ -14,8 +14,8 @@
       <van-grid-item icon="photo-o" text="文字" />
       <van-grid-item icon="photo-o" text="文字" />
       <van-grid-item icon="photo-o" text="文字" />
-      <van-grid-item icon="photo-o" text="文字" />
-      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="user-o" text="用户信息" />
+      <van-grid-item icon="setting-o" text="设置" />
     </van-grid>
 
     <van-popup v-model="isShowLoginModal">

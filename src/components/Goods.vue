@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="item in goodInfo" :key="item.id">
+    <li v-for="item in goodInfo" :key="item.id" @click="goGoodsDetail(item.id)">
       <img
         :src="item.list_pic_url"
         style="display: block"
@@ -16,6 +16,16 @@
 <script>
 export default {
   props: ["goodInfo"],
+  methods: {
+    goGoodsDetail(id) {
+      this.$router.push({
+        name: "goodsdetail",
+        query: {
+          id,
+        },
+      });
+    },
+  },
 };
 </script>
 
