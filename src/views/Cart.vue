@@ -109,7 +109,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(123);
+      this.$toast.fail("功能暂未开发");
     },
     onClickEditAddress() {
       this.isEditing = !this.isEditing;
