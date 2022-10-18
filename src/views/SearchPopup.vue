@@ -106,6 +106,7 @@ export default {
     // 搜索框取消按钮
     onCancel() {
       this.$router.back();
+      this.$store.commit("changeShadow", false);
     },
     // 输入
     async onInput() {

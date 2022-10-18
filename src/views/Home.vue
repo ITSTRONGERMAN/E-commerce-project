@@ -11,6 +11,10 @@
         <img :src="item.image_url" alt="" />
       </van-swipe-item>
     </van-swipe>
+    <transition name="van-fade">
+      <div class="shadow" v-show="$store.state.shadow"></div>
+    </transition>
+
     <transition name="slide">
       <router-view></router-view>
     </transition>
@@ -37,6 +41,7 @@ export default {
     },
     goSearch() {
       this.$router.push("/home/searchpopup");
+      this.$store.commit("changeShadow", true);
     },
   },
 };
@@ -58,5 +63,14 @@ export default {
 .slide-enter-to,
 .slide-leave {
   right: 0;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 </style>
