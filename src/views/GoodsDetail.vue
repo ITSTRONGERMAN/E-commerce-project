@@ -155,6 +155,9 @@ export default {
 </script>
 
 <style scoped lang="less">
+.gooddetail {
+  padding-bottom: 50px;
+}
 .my-swipe {
   height: 400px;
   img {

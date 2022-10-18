@@ -33,3 +33,8 @@ export const GetCartDataAPI = () => request.get("/cart/index");
 // 点击切换商品选中状态（含全选）
 export const ChangeCheckAllAPI = (params) =>
   request.post("/cart/checked", params);
+// 商品步进器修改
+export const ChangeStepperNumAPI = (params) =>
+  request.post("/cart/update", params);
+// 删除商品
+export const DeleteGoodsAPI = (params) => request.post("/cart/delete", params);

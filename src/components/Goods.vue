@@ -43,6 +43,10 @@ ul {
     line-height: 30px;
     .price {
       color: darkred;
+      font-size: 16px;
+    }
+    .van-ellipsis{
+      font-size: 18px;
     }
   }
 }

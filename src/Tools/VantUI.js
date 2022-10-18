@@ -29,6 +29,8 @@ import {
   SubmitBar,
   Checkbox,
   CheckboxGroup,
+  Stepper,
+  SwipeCell,
 } from "vant";
 Vue.use(Search);
 Vue.use(Swipe);
@@ -59,3 +61,5 @@ Vue.use(Card);
 Vue.use(SubmitBar);
 Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
+Vue.use(Stepper);
+Vue.use(SwipeCell);
